@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"eslint.lintTask.options": "--ext ts,tsx,js,jsx .",
+		"eslint.validate": [
+			"typescript",
+			"typescriptreact",
+			"javascript",
+			"javascriptreact"
+		],
+		"eslint.codeActionsOnSave.mode": "problems",
+		"diffEditor.ignoreTrimWhitespace": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "always",
+			"source.fixAll.eslint": "always"
+		},
+		"editor.formatOnType": true,
+		"editor.formatOnPaste": true,
+		"typescript.tsdk": "node_modules/typescript/lib",
+		"editor.tabSize": 2,
+	}
+}
