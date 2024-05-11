@@ -1,15 +1,15 @@
 import { Box, Tab, Tabs } from "@mui/material";
 import React, { useState } from "react";
-import ProfileManuFacturerPage from "./ProfilePage";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ProductListPage from "../products/list/ProductListPage";
+import ProfileManuFacturerPage from "./ProfilePage";
 
 enum SettingsTab {
   profile = "profile",
   products = "products",
 }
 
-const ManuFacturerDetails = () => {
+const ManuFacturerDetails: React.FC<any> = () => {
   const [tab, setTab] = useState(SettingsTab.profile);
   const { manufacturerId } = useParams();
   return (

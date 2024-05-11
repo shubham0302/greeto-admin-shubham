@@ -281,12 +281,12 @@ const AccountCard: FC<Props> = (props) => {
     <ListItem>
       <ListItemAvatar>
         <Avatar>
-          <Typography>{user?.companyName?.charAt(0) || ""}</Typography>
+          <Typography>{user?.firstName?.charAt(0) || ""}</Typography>
         </Avatar>
       </ListItemAvatar>
       <ListItemText>
         <Typography variant="labelLr" sx={{ display: "block" }}>
-          {user?.companyName}
+          {user?.firstName} {user?.lastName}
         </Typography>
         {/* <Typography variant="bodySm">{user?.role}</Typography> */}
       </ListItemText>

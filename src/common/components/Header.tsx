@@ -79,7 +79,9 @@ const Header = () => {
         >
           <Typography variant="labelXxl">{pageName}</Typography>
           <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-            <Typography>{user?.companyName}</Typography>
+            <Typography>
+              {user?.firstName} {user?.lastName}
+            </Typography>
             <IconButton onClick={open}>
               <ExitToApp />
             </IconButton>

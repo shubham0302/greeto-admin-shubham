@@ -27,7 +27,7 @@ const headData: HeadData[] = [
   },
 ];
 
-const ManufacturerList = () => {
+const ManufacturerList: React.FC<any> = () => {
   const { data, errorMessage, isError, isFetching } =
     useFetchManuFacturerList();
   const [list, setList] = useState(data);

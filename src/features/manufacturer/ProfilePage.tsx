@@ -2,7 +2,6 @@ import { Save } from "@mui/icons-material";
 import {
   Box,
   Button,
-  Chip,
   CircularProgress,
   FormControl,
   FormControlLabel,
@@ -29,9 +28,9 @@ import ErrorMessage from "../../common/components/ErrorMessage";
 import InputBox from "../../common/components/InputBox";
 import MediaUploader from "../../common/components/MediaUploader";
 import { manufacturerApiService } from "../../infrastructure/ManuFacturerApiService";
-import SocialMediaSetting from "../settings/SocialMediaSetting";
-import PersonsSetting from "../settings/PersonSetting";
 import FinancialInfoSetting from "../settings/FinancialInfoSetting";
+import PersonsSetting from "../settings/PersonSetting";
+import SocialMediaSetting from "../settings/SocialMediaSetting";
 
 type Props = {
   id: string;
@@ -41,7 +40,7 @@ type Props = {
 };
 
 const ProfileManuFacturerPage: React.FC<Props> = (props) => {
-  const { title = "Basic Info", hideProfileVisibility, cb, id } = props;
+  const { title = "Basic Info", cb, id } = props;
   const {
     data: dUser,
     isFetching,
